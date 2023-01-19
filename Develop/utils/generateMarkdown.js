@@ -43,6 +43,14 @@ function renderLicenseSection(license) {
    `;
   }
 }
+//Creating another function to render the license for table of contents
+function renderLicenseTOC(license) {
+  if (license == "None") {
+    return "";
+  } else {
+    return `* [License](#license)`;
+  }
+}
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
